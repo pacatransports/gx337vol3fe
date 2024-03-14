@@ -13,6 +13,8 @@ Bienvenue dans le dépôt GitHub de mon mod x37 pour le jeu vidéo OMSI 2! Ces m
 💪 **Fonctionnalités améliorées** : Ajout de fonctionnalités spécifiques des véhicules des réseaux de transport et améliorations pour une expérience de conduite plus réaliste.
 
 
+⏬ **Téléchargement**: https://github.com/pacatransports/gx337vol3fe/releases
+
 _**Installation**_
 
 ❗ Nécessite le DLC x37 Vol2 !
@@ -48,4 +50,4 @@ Acrotère Design / PACA Transports / iiixdiii_Ryan / Jérome F. / Love_RMistral 
 
 _Profitez du mod et bonne route sur OMSI 2!_ 🚌✨
 
-**Tableau des versions**: https://github.com/pacatransports/gx337vol3fe/commits/0.1
+
