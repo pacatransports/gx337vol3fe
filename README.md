@@ -43,7 +43,8 @@ _**Remerciements**_
 Acrotère Design / PACA Transports / iiixdiii_Ryan / Jérome F. / Love_RMistral / Le TC du 83 / The FMrr (quelques sons repris du véhicule Agora gratuit) / Palm Bus 
 
 
-![Capture d'écran 2024-03-14 014231](https://github.com/pacatransports/gx337vol3fe/assets/163354822/dcfa2d26-d562-4720-b61a-acafcba4a77f)
+![image](https://github.com/pacatransports/gx337vol3fe/assets/163354822/6a22bb89-5052-4e66-afb0-e0038bef6d15)
+
 
 
 _Profitez du mod et bonne route sur OMSI 2!_ 🚌✨
