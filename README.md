@@ -46,8 +46,6 @@ Acrotère Design / PACA Transports / iiixdiii_Ryan / Jérome F. / Love_RMistral 
 ![Capture d'écran 2024-03-14 014231](https://github.com/pacatransports/gx337vol3fe/assets/163354822/dcfa2d26-d562-4720-b61a-acafcba4a77f)
 
 
-👉 _**Prochaine version du pack après corrections de bugs**_ : mod du GX337 diesel.
-
 _Profitez du mod et bonne route sur OMSI 2!_ 🚌✨
 
 
