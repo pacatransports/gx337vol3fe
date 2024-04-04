@@ -1,0 +1,556 @@
+[friendlyname]
+Heuliez Bus - x37 Vol.3
+GX 337 3 Portes Voith Phase 2
+> Livrée de série
+
+[description]
+Le GX 337 est un autobus standard diesel de 12 mètres, fabriqué depuis 2014. 
+Il est équipé d'un moteur de 230 chevaux développant jusqu'à 1300Nm de couple, couplé à une boite de vitesses Voith Diwa a 4 rapports.
+
+ > Dimensions
+ Longueur : 12060mm
+ Largeur : 2550mm
+ Hauteur : 3300mm
+ 
+ > Groupe motopropulseur
+ Moteur : FPT/Iveco Tector 7 E6
+ Cylindrée : 6,7L
+ Puissance : 230Ch
+ 
+ > Années de Production
+ 2020-2022
+ 
+ Véhicule basé sur le DLC x37 Acrotere Design, par Bechir A. / PACA Transports
+[end]
+
+	[number] aktiviert die Zuweisung von Nummern
+	{colorscheme specific numbers path}	Pfad zu den *.org-(Omsi-Registration)-Dateien, welche für die Vergabe von Nummern zuständig sind.
+
+	Aufbau einer Nummernliste: in der ersten Zeile kommt der Name des Anstrichs (wie er auch im CTC angegeben wird), dann beliebig viele zulässige Nummern.
+	Steht in der ersten Zeile nichts, dann handelt es sich um die "Hauptliste", welche für alle Anstriche gilt, für welche keine Nummern spezifiziert werden.
+
+
+	[registration_automatic] aktiviert die Zuweisung der Kennzeichen im automatischen Modus
+	{regPrefix}				Präfix vor Nummer am Kennzeichen. Soll bspw. Nr 2000 das Kennzeichen "D-A 2000H" bekommen, ist der Präfix "D-A "
+	{regPostfix}				Postfix hinter Nummer am Kennzeichen. Im obigen Beispiel "H".
+
+	[registration_list] öffnet die angegebene Datei, um die Kennzeichenzuweisung nach den Nummern vorzunehmen. Der Index läuft hierbei parallel zu jener *.org-Datei, welche die Hauptliste enthält.
+	{filename}
+
+	[registration_free] aktiviert die freie Kennzeichenzuweisung. Im AI-Modus wird ein Kennzeichen der Map-Registrations-Datei verwendet, der User kann es für sein Fahrzeug frei wählen.
+
+
+
+
+[number]
+1Reg_Parc.org
+
+	[registration_free]
+
+[registration_automatic]
+M-AN 
+
+
+[kmcounter_init]
+2010
+40000
+
+
+
+[sound]
+sound\Diesel_12_Phase2.cfg
+
+[sound_ai]
+sound\Diesel_12_Phase2.cfg
+
+[model]
+model\Model_GX337_3p.cfg
+
+[paths]
+model\paths__3373.cfg
+
+[passengercabin]
+model\passengercabin_3373D.cfg
+
+	////////////////////////////////////////////////////////
+		Scripts
+	////////////////////////////////////////////////////////
+
+[varnamelist]
+26
+Script\AI_varlist.txt
+script\Collision_varlist.txt
+script\VOITH\BechirA\voith_varlist.txt
+script\MOTEUR\BechirA\Engine_varlist.txt
+Script\Elec_varlist.txt
+script\Bremse_varlist.txt
+script\auspuff_varlist.txt
+script\Lights_varlist.txt
+Script\PORTES\doors_varlist.txt
+script\wiper_varlist.txt
+Script\Cockpit_varlist.txt
+script\klappern_varlist.txt
+script\heizung_varlist.txt
+script\rain_varlist.txt
+script\dirt_varlist.txt
+script\wimpel_varlist.txt
+Script\visual_varlist.txt
+script\cashdesk_varlist.txt
+script\spray_varlist.txt
+Script\ticketprinter_varlist.txt
+Script\IBIS_varlist.txt
+script\KruegerMatrix\VMatrix_varlist.txt
+Script\SIV\AD_INEO_TFT_STAR_varlist.txt
+script\BUSINFO\Businfo_varlist.txt
+script\DASH\Actia_varlist.txt
+
+[stringvarnamelist]
+8
+script\Cockpit_stringvarlist.txt
+Script\ticketprinter_stringvarlist.txt
+Script\IBIS_stringvarlist_lcd.txt
+script\KruegerMatrix\VMatrix_stringvarlist.txt
+Script\SIV\AD_INEO_TFT_STAR_stringvarlist.txt
+script\DASH\Actia_stringvarlist.txt
+script\BUSINFO\Businfo_stringvarlist.txt
+
+[script]
+29
+script\main.osc
+Script\Main_AI.osc
+script\collision.osc
+Script\Cockpit_.osc
+script\VOITH\BechirA\voith.osc
+script\MOTEUR\BechirA\Engine.osc
+Script\Elec.osc
+Script\Bremse.osc
+script\auspuff.osc
+script\Lights.osc
+Script\PORTES\doors_3D.osc
+script\wiper.osc
+script\klappern.osc
+script\forcefeedback.osc
+script\rain.osc
+script\dirt.osc
+script\sound_volume.osc
+script\heizung.osc
+script\KruegerMatrix\VMatrix.osc
+script\wimpel.osc
+script\cashdesk.osc
+script\summer.osc
+script\spray.osc
+Script\Ticketprinter.osc
+Script\IBIS-2.osc
+Script\SIV\AD_INEO_TFT_CTRL.osc
+script\CONDUENT\ADAM_conduent.osc
+script\DASH\Actia.osc
+script\BUSINFO\Businfo.osc
+
+[constfile]
+20
+script\AI_constfile.txt
+script\collision_constfile.txt
+script\VOITH\BechirA\voith.txt
+script\MOTEUR\BechirA\Tector.txt
+Script\Elec_constfile.txt
+Script\Bremse__constfile.txt
+script\Lights_constfile.txt
+Script\PORTES\FR_door__constfile.txt
+script\auspuff_constfile.txt
+script\Cockpit_constfile.txt
+script\klappern_constfile.txt
+script\forcefeedback_constfile.txt
+script\wiper_constfile.txt
+script\dirt_constfile.txt
+script\heizung_constfile.txt
+Script\ticketprinter_constfile.txt
+Script\SIV\AD_INEO_TFT_STAR_constfile.txt
+script\KruegerMatrix\Vmatrix_constfile_K++_pc.txt
+script\DASH\Actia_constfile.txt
+script\BUSINFO\Businfo_constfile.txt
+
+
+
+
+
+	////////////////////////////////////////////////////////
+		Kameras *NEU01*
+	////////////////////////////////////////////////////////
+
+	0: Blick nach ganz links
+[add_camera_driver]
+-0.91
+4.60
+2
+-0.06
+60
+-135
+0
+	1: Blick nach schraeg links
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+60
+-85
+0
+	2: Blick in den linken Spiegel
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+60
+-35
+0
+
+	3: Blick nach vorne (std)
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+66
+0
+-3
+
+	4: Blick in den rechten Spiegel
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+60
+35
+1
+
+	5: Blick zur Tuer
+[add_camera_driver]
+-0.71
+4.45
+2
+-0.06
+60
+90
+-10
+
+	6: Blick nach ganz rechts
+[add_camera_driver]
+0
+4.60
+2.16
+-0.06
+60
+135
+0
+
+	7: Fahrscheinverkauf-Sicht
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+45
+45
+-40
+[view_ticketselling]
+
+	8: Fahrplan-Sicht
+[add_camera_driver]
+-0.676805
+4.45
+2
+-0.06
+30
+-15
+35
+[view_schedule]
+
+
+################
+Passagiersichten
+################
+
+	
+	0: Hinten links sitzend
+[add_camera_pax]
+-1.0
+-1.85
+2
+-0.06
+45
+25
+0
+
+	1: Stehplatz an der Hintertuer
+[add_camera_pax]
+-0.73
+-0.6
+2.05
+-0.06
+45
+90
+0
+	2: vorne rechts sitzend
+[add_camera_pax]
+-1.0
+2.04
+2
+-0.06
+45
+180
+0
+
+	3: vorne rechts sitzend2
+[add_camera_pax]
+0.86
+3.43
+2
+-0.06
+45
+-20
+0
+
+	2: hinten rechts sitzend
+[add_camera_pax]
+0.86
+-4.79
+2.1
+-0.06
+45
+-20
+0
+
+
+
+	Folgender Befehl setzt die Standardfahrerkamera:
+
+[set_camera_std]
+3
+
+	Folgender Befehl setzt den Zentrierpunkt der Au?enkamera:
+
+[set_camera_outside_center]
+0
+0
+1.2
+
+
+
+	////////////////////////////////////////////////////////
+		Reflexionskameras *NEU01*
+	////////////////////////////////////////////////////////
+	
+[add_camera_reflexion_2]
+-1.36
+5.19
+2.249
+0
+52
+167
+-11
+0.15
+
+[add_camera_reflexion]
+1.34
+5.94
+2.256
+0
+52
+202
+-10
+
+[add_camera_reflexion]
+0.05
+5.35
+2.47
+0
+52
+195
+-15
+
+[add_camera_reflexion_2]
+0.95
+-0.66
+2.46
+0
+65
+-11.5
+-30
+15
+
+[add_camera_reflexion_2]
+0.95
+-4.46
+2.46
+0
+65
+-7
+-30
+15
+
+[add_camera_reflexion_2]
+0.95
+-0.38
+2.46
+0
+65
+-14
+-30
+15
+
+[add_camera_reflexion_2]
+1
+-0.38
+2.46
+0
+65
+-14
+-30
+15
+
+
+[add_camera_reflexion_2]
+-1.34
+5.32
+2.21
+0
+52
+164
+-13
+0.15
+
+[add_camera_reflexion]
+1.331
+5.99
+2.26
+0
+52
+202
+-10
+
+[add_camera_reflexion_2]
+-1.34
+5.32
+2.21
+0
+52
+164
+-13
+0.15
+
+[add_camera_reflexion]
+1.331
+5.99
+2.26
+0
+52
+200
+-10
+
+[add_camera_reflexion_2]
+0.8
+6.57
+2.40
+0
+70
+210
+-30
+0.15
+
+	////////////////////////////////////////////////////////
+		Physikalische und geometrische Grunddaten
+	////////////////////////////////////////////////////////
+
+	Masse in t:
+[mass]
+11.80
+
+	Trägheitsmomente um x, y und z-Achse, also Quer-, Längs- und Hochachse um den Schwerpunkt in dieser Reihenfolge in t*m^2:
+349
+84
+349
+
+[momentofintertia]
+349
+84
+349
+
+
+	Boundingbox des Busses *NEU01*
+	
+	Breite
+    Länge
+    Höhe
+    Abstand des Mittelpunkts der Boundingbox vom Nullpunkt des lokalen Koordinatensystems auf Breitenachse in m (x)
+    Abstand des Mittelpunkts der Boundingbox vom Nullpunkt des lokalen Koordinatensystems auf Längsachse in m (y)
+    Abstand des Mittelpunkts der Boundingbox vom Nullpunkt des lokalen Koordinatensystems auf Hochachse in m (z) 
+
+[boundingbox]
+2.52
+12
+2.4
+0
+-0.35
+1.7
+
+	Höhe d. Schwerpunktes ueberm Boden:
+
+[schwerpunkt]
+1.096
+
+
+	Rollwiderstand (konstant, wird demnächst eventuell geändert) als Kraft in N
+[rollwiderstand]
+1000
+
+[rot_pnt_long]
+-2.938
+
+[inv_min_turnradius]
+0.180
+
+[ai_deltaheight]
+-0.10
+
+
+	Front axle :
+
+[newachse]
+achse_long
+3.196
+achse_maxwidth
+2.37
+achse_minwidth
+1.81
+achse_raddurchmesser
+0.97
+achse_feder
+291
+achse_maxforce
+90
+achse_daempfer
+15
+achse_antrieb
+0
+
+	Rear axle:
+
+[newachse]
+achse_long
+-2.938
+achse_maxwidth
+2.41
+achse_minwidth
+1.19
+achse_raddurchmesser
+0.97
+achse_feder
+326
+achse_maxforce
+150
+achse_daempfer
+15
+achse_antrieb
+1
